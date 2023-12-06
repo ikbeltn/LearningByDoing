@@ -1,0 +1,20 @@
+***Was sind Wrapper Klassen
+- Wrapper Klassen sind Klassen, die die primitiven Datentypen in Objekte umwandeln
+- Wrapper Klassen sind unveränderlich (immutable)
+- Wrapper Klassen sind final
+- Wrapper Klassen sind vergleichbar
+
+package WrapperUndGenerics;
+
+public class Wrapper {
+    public static void main(String[] args) {
+
+        int zahl1 = 5;
+        double zahl3 = 5.5;
+
+        Integer zahl2 = Integer.valueOf(5);
+        Double zahl4 = Double.valueOf(zahl3);
+
+        System.out.println(zahl2);
+    }
+}

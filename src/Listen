@@ -1,0 +1,60 @@
+add (E e);
+fügt ein Element am Ende der Liste hinzu
+get (int index);
+gibt das Element an der Stelle index zurück
+add (int index, E e);
+fügt ein Element an der Stelle index ein
+remove (int index);
+entfernt das Element an der Stelle index
+contains (Object o);
+gibt true zurück, wenn das Element in der Liste enthalten ist
+isEmpty ();
+gibt true zurück, wenn die Liste leer ist
+iterator ();
+erstellt ein Iterator-Objekt, mit dem die Liste durchlaufen werden kann
+size ();
+gibt die Anzahl der Elemente in der Liste zurück
+
+***for each Schleife***
+for (String s : list) {
+    System.out.println(s);
+}
+
+***Array***
+int[] arr = new int[10];
+int[] arr = {1, 2, 3, 4, 5};
+int[] arr = new int[]{1, 2, 3, 4, 5};
+
+-Was ist ein Array?
+-Ein Array ist eine Datenstruktur, die eine feste Anzahl von Elementen des gleichen Typs enthält.
+-Die Elemente eines Arrays werden in einem zusammenhängenden Speicherbereich gespeichert.
+-Die Elemente eines Arrays können über einen Index angesprochen werden.
+-Der Index eines Arrays beginnt bei 0.
+-Die Länge eines Arrays ist fest und kann nicht geändert werden.
+
+***ArrayList***
+ArrayList<String> list = new ArrayList<String>();
+ArrayList<String> list = new ArrayList<String>(10);
+ArrayList<String> list = new ArrayList<String>(Arrays.asList("a", "b", "c"));
+
+-ArrayList ist eine Klasse, die die Schnittstelle List implementiert.
+-ArrayList ist eine dynamische Datenstruktur, die Elemente des gleichen Typs enthält.
+-Die Elemente eines ArrayList werden in einem zusammenhängenden Speicherbereich gespeichert.
+-Die Elemente eines ArrayList können über einen Index angesprochen werden.
+-Der Index eines ArrayList beginnt bei 0.
+-Die Länge eines ArrayList ist variabel und kann geändert werden.
+
+MERKE:
+Wann ArrayList:
++ Wenn die Größe der Liste ungefähr bekannt ist
++ Wenn man viel in der Struktur suchen muss (get)
+- Wenn man viel löschen möchte (remove)
+- Wenn man weniger hinzufügen möchte (add)
+
+Wann LinkedList:
++ Wenn man viel löschen möchte (remove)
++ Wenn man viel hinzufügen möchte (add)
+- Wenn man viel in der Struktur suchen muss (get)
+
+***LinkedList***
+LinkedList<String> list = new LinkedList<String>();

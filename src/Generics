@@ -1,0 +1,13 @@
+Was sind Generics? = alles kann nichts muss
+***Generics
+- sind eine Möglichkeit, um Typen in Java zu parametrisieren
+- ermöglichen es, Klassen, Interfaces und Methoden zu schreiben, die mit verschiedenen Typen arbeiten können
+- ermöglichen es, Typen zu definieren, die von anderen Typen abhängen
+
+T=Type -> Steht für alle Datentypen
+E=Element -> Steht für alle Elemente
+K=Key -> Steht für alle Schlüssel
+V=Value -> Steht für einen Wert z.B. 5 oder "Hallo"
+
+private T value; -> T ist ein Platzhalter für einen Datentypen
+Diese Variable kann dann mit jedem Datentypen befüllt werden

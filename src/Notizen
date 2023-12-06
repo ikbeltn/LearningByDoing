@@ -1,0 +1,189 @@
+***DATENTYPEN
+Ganzzahl = int, long
+Kommazahl = float, double
+Zeichenkette = char, string
+Wahrheitswert = bool
+
+***KOMMENTARE
+// Einzeiliger Kommentar
+/* Mehrzeiliger Kommentar */
+
+***Variablen
+int a = 5;
+double b = 3.14;
+char c = 'a';
+string d = "Hallo Welt";
+bool e = true;
+//<Datentyp> <Name> = <Wert>;
+
+***ZUWEISUNGSOPERATOREN
+=   // Zuweisung
++=  // Addieren und Zuweisen
+-=  // Subtrahieren und Zuweisen
+*=  // Multiplizieren und Zuweisen
+/=  // Dividieren und Zuweisen
+%=  // Modulo und Zuweisen
+
+***VERGLEICHSOPERATOREN
+==  // Gleich
+!=  // Ungleich
+<   // Kleiner
+>   // Größer
+<=  // Kleiner oder gleich
+>=  // Größer oder gleich
+
+***LOGISCHE OPERATOREN
+&&  // Und
+||  // Oder
+!   // Nicht
+
+***ARITHMETISCHE OPERATOREN
++   // Addieren
+-   // Subtrahieren
+*   // Multiplizieren
+/   // Dividieren
+%   // Modulo
+
+***IF-ELSE
+if(<Bedingung>)
+{
+    // Code
+}
+else
+{
+    // Code
+}
+
+***CASTING
+int a = 5;
+double b = 3.14;
+int c = a + (int)b;
+
+***SCANNER
+Scanner scanner = new Scanner(System.in);
+sout.println("Geben Sie eine Zahl ein:");
+int a = scanner.nextInt();
+double b = scanner.nextDouble();
+String c = scanner.next();
+String d = scanner.nextLine();
+sout.println("Sie haben " + a + " eingegeben.");
+scanner.close();
+
+***SWITCH
+switch(<Variable>)
+{
+    case <Wert>:
+        // Code
+        break;
+    case <Wert>:
+        // Code
+        break;
+    default:
+        // Code
+        break;
+}
+*** FOR-SCHLEIFE
+for(<Startwert>; <Bedingung>; <Zähler>)
+{
+    // Code
+}
+*** WHILE-SCHLEIFE
+while(<Bedingung>)
+{
+    // Code
+}
+/Unterschied zwischen for und while:/
+for ist für eine bestimmte Anzahl an Durchläufen gedacht,
+während while für eine unbekannte Anzahl an Durchläufen gedacht ist.
+
+***Static
+Mit Static werden das keine Objektmethoden sondern Klassenmethoden
+public static void -> Methode kann ohne Objekt aufgerufen werden
+public void -> Methode kann nur mit Objekt aufgerufen werden
+Globale Variable die überall gültig ist. Bsp ich will für alle Autos 4 Reifen festlegen
+
+***Modifikatoren
+-public -> Alle Klasse im src haben Zugriff auf diese Klasse
+-private -> Zugriff nur innerhalb der eigenen Klasse d.h. man braucht setter und getter
+
+***Getter und Setter
+Mit Getter macht man eine Methode die den Wert eine privaten Variable aufruft
+Mit Setter wird diese überschrieben
+
+public void setAlter(int alter)
+{
+    this.alter = alter;
+}
+
+public int getAlter()
+{
+    return alter;
+}
+
+***Abstrakte Klasse
+-Abstrakte Methode muss in der Superklasse bodylos sein, wird final erst in der erbenden Klasse beschrieben.
+-Abstrakte Klasse kann nicht instanziiert werden
+-Aus Ihr erstellen wir keine Objekte sondern es ist nur Elternklasse für andere Klassen
+-Man kann sich den Body sparen
+-Abstrakte Klasse kann auch normale Methoden haben
+-Dadruch das Vogel von Tier erbt, müssen nun auch alle Methode aus der Superklasse implementiert werden.
+
+***Interface
+-Interface beginnt mit I -> IFlugfähig (Konvention)
+-Interface ist eine Klasse die nur aus abstrakten Methoden besteht
+-Variablen in einem Interface sind immer final
+-Methode in einem Interface sind immer public und abstract
+-> Methoden die nur eine Signatur haben ohne Body
+-Die Klasse GalaxyS5 muss die Klasse IHandy (interface) vollenden.
+
+***Unterschied Interface und Abstrakte Klasse
+-Interface besteht nur aus abstrakten Methoden
+
+***final
+-final vor einer Klasse -> Klasse kann nicht mehr erweitert werden
+-final vor einer Methode -> Methode kann nicht mehr überschrieben werden
+-final vor einer Variable -> Variable kann nicht mehr überschrieben werden
+
+***Schreibweise
+-Interface beginnt mit I -> IFlugfähig (Konvention)
+-Variablen CamelCase -> int meinAlter = 20;
+-Klassen und Methoden PascalCase -> class MeinAuto
+-Methoden und Variablen klein geschrieben -> void meinAuto
+-Konstanten werden komplett groß geschrieben -> final int MEIN_ALTER = 20;
+
+***Exceptions
+-Exceptions sind Fehler die während der Laufzeit auftreten
+-Exceptions werden mit try-catch abgefangen
+-try -> Code der ausgeführt werden soll
+-catch -> Code der ausgeführt werden soll wenn ein Fehler auftritt
+-finally -> Code der immer ausgeführt werden soll
+-throw -> Fehler selbst werfen, "ich schmeiße jetzt!"
+-throws -> Fehler weitergeben, "ich drohe damit, dass ich werfe!"
+try {
+            Taschenrechner.geteilt(20, 0);
+        } catch (Exception e) {
+            System.out.println("Division durch 0 nicht möglich!");
+        } finally {
+            System.out.println("Programm beendet!");
+        }
+-Exception ist die Superklasse aller Exceptions
+
+***foreach
+for (int i = 0; i < zahlen.length; i++) {
+            System.out.println(zahlen[i]);
+        }
+        for (int zahl : zahlen) {
+            System.out.println(zahl);
+        }
+-foreach ist eine Schleife die über ein Array oder eine Collection iteriert
+
+Die Syntax für ein Java Foreach Schleife ist:
+
+for (Datentyp Element : Collection){
+     // Bedingung, die Element enthält
+}
+
+    Datentyp: Hier muss der Datentyp der Kollektion festgelegt werden.
+    Element: Dabei handelt es sich um eine lokale Variable der Schleife.
+    Collection: Name der Kollektion, wie beispielsweise der Arrayname.
+    Bedingung: Hier wird festgelegt, welche Aktion für die Werte der Kollektion ausgeführt werden soll, auf die du zugreifst. In dem Statement muss das Element bzw. die Bezeichnung der Variablen enthalten sein.

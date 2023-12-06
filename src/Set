@@ -1,0 +1,31 @@
+***Set***
+
+Es eine Schnittstelle aus dem Collection Framework
+Es repräsentiert eine Sammlung eindeutiger Elemente, jedes Element kommt nur einmal vor.
+Das bedeutet es gibt keine doppelten Elemente in einem Set.
+
+***TreeSet
+
+Wie erstelle ich ein TreeSet?
+Set<String> set1 = new TreeSet<>();
+
+-Durch das Set sind die Elemente einzigartig
+-Die Klasse TreeSet sortiert die List in natürlicher Ordnung
+
+***HashSet
+
+Wie erstelle ich ein HashSet?
+Set<String> set1 = new HashSet<>();
+
+- Durch das Set sind die Elemente einzigartig
+- Die Klasse HashSet sortiert die List nicht -> die Elemente werden in zufälliger Reihenfolge ausgegeben
+- Die Klasse HashSet ist schneller als TreeSet
+
+***LinkedHashSet
+
+Wie erstelle ich ein LinkedHashSet?
+Set<String> set1 = new LinkedHashSet<>();
+
+- Durch das Set sind die Elemente einzigartig
+- Die Klasse LinkedHashSet sortiert die List in der Reihenfolge, in der die Elemente hinzugefügt wurden
+- Die Klasse LinkedHashSet ist langsamer als HashSet

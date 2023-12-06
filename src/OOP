@@ -1,0 +1,37 @@
+//Was macht extends?
+Ich erstelle eine Superklasse Tier, die alle Eigenschaften und Methoden enthält
+und meine Subklassen z.B. Hund, Kuh etc. erben diese Eigenschaften
+Ich schaffe somit eine universelle Vorlage und muss nicht immer erneut alles eingeben.
+//super
+Super gibt die Parameter aus den Klassen die erben, wie Hund, Kuh an die Superklasse weiter.
+
+Man kann die erbenden Klassen auch zusätzliche Eigenschaften geben, zb die nicht jedes Tier hat.
+
+//@Override
+Mit @Override lassen sich Methoden aus der Superklasse überschreiben
+
+//Assoziation
+Eine Assoziation ist eine Beziehung zwischen zwei Klassen, die eine Verbindung zwischen ihnen herstellt.
+
+//extends
+extends ist ein Schlüsselwort, das in der Java-Programmiersprache verwendet wird, um eine Klasse oder ein Interface zu erstellen, das von einer anderen Klasse oder einem anderen Interface „erbt“.
+
+//super
+super ist ein Schlüsselwort in Java, das verwendet wird, um auf Variablen, Methoden und Konstruktoren der übergeordneten Klasse zuzugreifen. Es wird verwendet, um den Konstruktor der übergeordneten Klasse aufzurufen und auf die Variablen der übergeordneten Klasse zuzugreifen.
+
+//this
+this ist ein Schlüsselwort in Java, das verwendet wird, um eine Instanzvariablen zu referenzieren. this kann verwendet werden, um die Instanzvariablen der aktuellen Klasse zu referenzieren. this kann verwendet werden, um eine Instanzmethode der aktuellen Klasse aufzurufen.
+
+//null
+null ist ein Schlüsselwort in Java, das verwendet wird, um einen nicht vorhandenen oder unbekannten Wert anzugeben. Es ist ein Marker in Java, der verwendet wird, um anzuzeigen, dass sich keine Daten an einer bestimmten Stelle befinden.
+
+//implements
+implements ist ein Schlüsselwort in Java, das verwendet wird, um ein Interface zu implementieren. Eine Klasse, die ein Interface implementiert, muss die Methoden in der Schnittstelle implementieren.
+
+//interface
+Ein Interface ist eine Sammlung von Methoden, die eine Klasse implementieren muss. Eine Schnittstelle ist ähnlich wie eine Klasse, enthält jedoch nur die Signaturen der Methoden, Konstanten, Klassen und leeren Methoden. Die Schnittstelle kann nicht instanziiert werden, da sie keine Konstruktoren enthält. Die Schnittstelle wird von einer Klasse implementiert. Die Klasse, die die Schnittstelle implementiert, muss die Methoden der Schnittstelle implementieren.
+
+//abstract
+abstract ist ein Schlüsselwort in Java, das verwendet wird, um eine Klasse zu deklarieren, die nicht instanziiert werden kann, oder eine Methode, die nicht implementiert werden kann. Eine abstrakte Klasse kann nicht instanziiert werden, sie kann nur erweitert werden. Eine abstrakte Methode kann nicht implementiert werden, sie kann nur in einer abgeleiteten Klasse implementiert werden.
+
+
