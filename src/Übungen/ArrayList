@@ -1,4 +1,4 @@
-***List
+***ChatGptTasks
 -eine Liste enthält eine geordnete Folge von Elementen (Objekten)
 -Groesse der Liste ist dynamisch
 -Elemente koennen hinzugefuegt und entfernt werden
@@ -7,7 +7,7 @@
 -Elemente können an beliebiger Stelle eingefügt werden !!!
 
 ***ArrayList
--ist eine Klasse, die die List-Schnittstelle implementiert
+-ist eine Klasse, die die ChatGptTasks-Schnittstelle implementiert
 -ist eine generische Klasse
 -ist eine dynamische Liste
 -Zuordnung von Elementen zu Indizes

@@ -37,7 +37,7 @@ ArrayList<String> list = new ArrayList<String>();
 ArrayList<String> list = new ArrayList<String>(10);
 ArrayList<String> list = new ArrayList<String>(Arrays.asList("a", "b", "c"));
 
--ArrayList ist eine Klasse, die die Schnittstelle List implementiert.
+-ArrayList ist eine Klasse, die die Schnittstelle ChatGptTasks implementiert.
 -ArrayList ist eine dynamische Datenstruktur, die Elemente des gleichen Typs enthält.
 -Die Elemente eines ArrayList werden in einem zusammenhängenden Speicherbereich gespeichert.
 -Die Elemente eines ArrayList können über einen Index angesprochen werden.
