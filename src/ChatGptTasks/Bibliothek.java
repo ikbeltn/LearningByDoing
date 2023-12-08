@@ -25,7 +25,7 @@ public class Bibliothek {
         boolean buchGefunden = false;
         for (Buch buch : katalog) {
             if (buch.getAutor().equals(gesuchterAutor)) {
-                System.out.println(buch);
+                System.out.println("Titel: " + buch.getTitel());
                 buchGefunden = true;
             }
         }
@@ -38,12 +38,12 @@ public class Bibliothek {
         boolean buchGefunden = false;
         for (Buch buch : katalog) {
             if (buch.getIsbn().equals(isbn)) {
-                System.out.println(buch);
+                System.out.println("Titel: " + buch.getTitel());
                 buchGefunden = true;
             }
         }
         if (!buchGefunden) {
-            System.out.println("Keine Bücher mit der ISBN: " + isbn + "gefunden.");
+            System.out.println("Keine Bücher mit der ISBN: " + isbn + " gefunden.");
         }
     }
 }
