@@ -2,11 +2,10 @@ package ChatGptTasks;
 
 import java.util.List;
 
-public class Bibliothek extends Buch {
+public class Bibliothek {
     List<Buch> katalog;
 
-    public Bibliothek(List katalog, String titel, String autor, String isbn, boolean ausgeliehen) {
-        super(titel, autor, isbn, ausgeliehen);
+    public Bibliothek(List katalog) {
         this.katalog = katalog;
     }
 
@@ -28,11 +27,13 @@ public class Bibliothek extends Buch {
             if (buch.getAutor().equals(gesuchterAutor)) {
                 System.out.println(buch);
                 buchGefunden = true;
-
-            } else if (!buchGefunden) {
-                System.out.println("Keine Bücher von " + gesuchterAutor + "gefunden.");
             }
         }
+        if (!buchGefunden) {
+            System.out.println("Es existiert kein buch von dem Autor: " + gesuchterAutor);
+            ;
+        }
+        System.out.println("Keine Bücher von " + gesuchterAutor + "gefunden.");
     }
 
     public void findIsbn(String isbn) {
@@ -41,9 +42,10 @@ public class Bibliothek extends Buch {
             if (buch.getIsbn().equals(isbn)) {
                 System.out.println(buch);
                 buchGefunden = true;
-            } else if (!buchGefunden) {
-                System.out.println("Keine Bücher mit der ISBN: " + isbn + "gefunden.");
             }
+        }
+        if (!buchGefunden) {
+            System.out.println("Keine Bücher mit der ISBN: " + isbn + "gefunden.");
         }
     }
 }
