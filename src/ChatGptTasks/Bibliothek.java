@@ -31,7 +31,6 @@ public class Bibliothek {
         }
         if (!buchGefunden) {
             System.out.println("Es existiert kein buch von dem Autor: " + gesuchterAutor);
-            ;
         }
         System.out.println("Keine Bücher von " + gesuchterAutor + "gefunden.");
     }
