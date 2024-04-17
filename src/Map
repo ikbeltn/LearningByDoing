@@ -1,0 +1,31 @@
+***Map***
+
+Es ist eine Schnittstelle aus dem Collection Framework
+Es repräsentiert eine Sammlung von Schlüssel-Wert-Paaren, wobei jeder Schlüssel nur einmal vorkommt.
+Das bedeutet, dass jeder Schlüssel in der Map eindeutig ist und jedem Schlüssel ein Wert zugeordnet ist.
+
+***TreeMap***
+
+Wie erstelle ich eine TreeMap?
+Map<String, Integer> map1 = new TreeMap<>();
+
+- Durch die Map sind die Schlüssel einzigartig.
+- Die Klasse TreeMap sortiert die Einträge basierend auf den Schlüsseln in aufsteigender Reihenfolge (natürliche Ordnung).
+
+***HashMap***
+
+Wie erstelle ich eine HashMap?
+Map<String, Integer> map1 = new HashMap<>();
+
+- Durch die Map sind die Schlüssel einzigartig.
+- Die Klasse HashMap sortiert die Einträge nicht. Die Einträge werden in der Regel in zufälliger Reihenfolge ausgegeben.
+- Die Klasse HashMap ist schneller als TreeMap.
+
+***LinkedHashMap***
+
+Wie erstelle ich eine LinkedHashMap?
+Map<String, Integer> map1 = new LinkedHashMap<>();
+
+- Durch die Map sind die Schlüssel einzigartig.
+- Die Klasse LinkedHashMap behält die Reihenfolge der Einträge bei, in der sie hinzugefügt wurden. Die Einträge werden in der Reihenfolge ausgegeben, in der sie eingefügt wurden.
+- Die Klasse LinkedHashMap ist langsamer als HashMap, bietet jedoch eine konsistente Reihenfolge der Einträge.

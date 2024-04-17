@@ -1,11 +1,8 @@
-package Datenstrukturen;
+package CollectionSet;
 
 import java.util.*;
 
 public class Main {
-    /**
-     *
-     */
     public static void main(String[] args) {
 
         // Wichtiger Unterschied zu List
