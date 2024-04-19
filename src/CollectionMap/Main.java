@@ -18,11 +18,14 @@ public class Main {
 
         Map<Integer,String> map1 = new HashMap<>();
 
+        // put() speichert ein Schlüssel und Inhalt in die Datenstruktur
         map1.put(1234, "Lambo Diablo GT");
         map1.put(4321, "Kuku Kiki Kaka");
 
+        // keySet() ruft ein Set auf mit allen Schlüsseln
         for (Integer i : map1.keySet()) {
             System.out.println("Der Schlüssel lautet: " + i);
+            // get() ruft den Inhalt des jeweiligen Schlüssel ab
             System.out.println("Der dazugehörige Inhalt ist: " + map1.get(i) + "\n");
         }
     }

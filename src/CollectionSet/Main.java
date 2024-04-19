@@ -2,6 +2,25 @@ package CollectionSet;
 
 import java.util.*;
 
+class Person{
+
+    private int id;
+    private String name;
+
+    public Person (int id, String name){
+        this.id = id;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                '}';
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
 
@@ -34,6 +53,11 @@ public class Main {
         set1.add("Abdu");
         set1.add("Mohamed");
         set1.add("Yassin");
+
+        Person p1 = new Person(1, "Chris");
+        Person p2 = new Person(2, "Nancy");
+        Person p3 = new Person(3, "Ronald");
+        Person p4 = new Person(4, "Biden");
 
         // HashSet
         set2.add("Abdu");
